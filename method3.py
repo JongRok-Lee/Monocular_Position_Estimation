@@ -10,7 +10,7 @@ mtx = np.array([[357.567039, 0.0, 331.016276],
                 [0.0, 0.0, 1.0]])
 
 dist = np.array([-0.303023, 0.068071, 0.002586, 0.000215, 0.0])
-src = cv2.imread("..\extrinsic.png", cv2.IMREAD_COLOR)
+src = cv2.imread("extrinsic.png", cv2.IMREAD_COLOR)
 src = cv2.cvtColor(src, cv2.COLOR_BGR2RGB)
 un_src = cv2.undistort(src, mtx, dist, None)
 

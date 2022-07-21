@@ -25,7 +25,7 @@ mtx = np.array([[357.719727, 0.0, 332.547112],
 
 dist = np.array([-0.326641, 0.092732, -0.000171, 0.000783, 0.0])
 ####################################
-src = cv2.imread("..\image.png", cv2.IMREAD_COLOR)
+src = cv2.imread("image.png", cv2.IMREAD_COLOR)
 un_src = cv2.undistort(src, mtx, dist, None)
 
 # left_y_norm = (left_v - mtx[1][2]) / mtx[1][1]
